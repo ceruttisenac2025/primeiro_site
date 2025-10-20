@@ -1,0 +1,19 @@
+{
+    "name": "miguel/site",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            
+        }
+    },
+    "authors": [
+        {
+            "name": "ceruttisenac2025",
+            "email": "cerutti.senac2025@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "bramus/router": "~1.6"
+    }
+}
