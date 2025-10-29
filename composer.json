@@ -1,0 +1,23 @@
+{
+    "name": "miguel/site",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Controller\\" : "src/controller",
+            "Services\\" : "src/services"
+        }
+    },
+    "authors": [
+        {
+            "name": "ceruttisenac2025",
+            "email": "cerutti.senac2025@gmail.com"
+
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=8.2.0",
+        "bramus/router": "~1.6",
+        "league/plates": "v3.x-dev"
+    }
+}
