@@ -1,14 +1,20 @@
 <?php
-use Controller\TemplateRender;
-
-
-$router->mount("", fn: function() use($router): void{
-  $router->get("/", function():void{
-  TemplateRender::run()->renderMake('pages::home', [
-    "nome_usuario" => "Cerutti",
-    "title" => "Pagina incial",
-    //criar variavel aqui (acho)
-    ]);
-  });
+$router->mount('', function() use($router) {
+   $router->setNamespace('\Services');
+   $router->get('/', 'PageServices@getHome');
 });
 
+$router->mount('/login', function() use($router){
+   $router->setNamespace('\Services');
+   $router->get('/', 'PageServices@getLogin');
+
+   $router->post('/auth', 'PageServices@postAutentication');
+});
+
+$router->mount('/about', function() use($router){
+   $router->get('/', 'PageServices@getAbout');
+});
+
+$router->mount('/produtos', function() use($router){
+   $router->get('/', 'PageServices@getProdutos');
+});
