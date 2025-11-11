@@ -28,8 +28,18 @@ class PageServices{
                 "Nome" => "Produto 2",
                 "Imagem" => "img/personagem.webp",
                 "Preco" => 1515.98
+            ],
+            [
+                "Nome" => "Breno",
+                "Imagem" => "img/breno.jpg",
+                "Preco" => 5.98
+            ],
+            [
+                "Nome" => "Produto 4",
+                "Imagem" => "img/personagem.webp",
+                "Preco" => 15.00
             ]
-        ];
+        ];     
         TemplateRender::run()->renderMake('pages::produtos', [
             "produto" => $produtos
         ]);
