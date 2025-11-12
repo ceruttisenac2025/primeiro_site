@@ -1,0 +1,199 @@
+/* Variáveis para cores e espaçamento */
+:root {
+    --color-primary: #007bff; /* Azul primário */
+    --color-secondary: #6c757d; /* Cinza secundário */
+    --color-text-dark: #212529;
+    --color-light-bg: #f8f9fa;
+    --shadow-light: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    --border-radius: 0.5rem;
+    --spacing-lg: 3rem;
+    --spacing-md: 1.5rem;
+}
+
+/* 1. Estrutura e Centralização */
+.container-custom {
+    padding: var(--spacing-lg) 0;
+    font-family: Arial, sans-serif;
+}
+
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+.text-center-custom {
+    text-align: center;
+}
+
+/* 2. Tipografia */
+.main-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: var(--color-secondary);
+    margin-bottom: 3rem;
+}
+
+/* 3. Card de Informação */
+.info-card {
+    background-color: var(--color-light-bg);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-light);
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.card-title-custom {
+    font-size: 1.75rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.card-text-custom {
+    font-size: 1.1rem;
+    color: #495057;
+}
+
+/* 4. Produtos e Grid (Flexbox para Responsividade) */
+.products-heading {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color-secondary);
+    font-weight: 600;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid var(--color-primary);
+    padding-bottom: 0.5rem;
+}
+
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    margin-bottom: 3rem;
+    justify-content: center;
+}
+
+.product-col {
+    /* Define a largura para 3 colunas em telas grandes */
+    width: calc(33.333% - var(--spacing-md) * 2 / 3); 
+    min-width: 280px; /* Para evitar quebras feias em telas médias */
+}
+
+/* 5. Cartões de Produto */
+.product-card {
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    border-top: 5px solid; /* A cor da borda será definida pelas classes específicas abaixo */
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-primary { border-top-color: var(--color-primary); }
+.card-secondary { border-top-color: #ffc107; /* Exemplo de cor 2 */ }
+.card-info { border-top-color: #20c997; /* Exemplo de cor 3 */ }
+
+.card-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-body-custom {
+    padding: var(--spacing-md);
+    text-align: center;
+}
+
+.product-name {
+    font-size: 1.25rem;
+    color: var(--color-text-dark);
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.product-price {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+/* 6. Botões */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.btn {
+    padding: 0.75rem 2.5rem;
+    font-size: 1.1rem;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    font-weight: 600;
+    border: 1px solid transparent;
+}
+
+.btn-primary-custom {
+    background-color: var(--color-primary);
+    color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 123, 255, 0.4);
+}
+
+.btn-primary-custom:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary-custom {
+    background-color: transparent;
+    border-color: var(--color-secondary);
+    color: var(--color-secondary);
+}
+
+.btn-secondary-custom:hover {
+    background-color: var(--color-secondary);
+    color: #fff;
+}
+
+/* 7. Responsividade para o Grid de Produtos */
+@media (max-width: 992px) {
+    .product-col {
+        /* Duas colunas em tablets */
+        width: calc(50% - var(--spacing-md) / 2);
+    }
+}
+
+@media (max-width: 600px) {
+    .product-col {
+        /* Uma coluna em celulares */
+        width: 100%;
+    }
+
+    .main-title {
+        font-size: 2rem;
+    }
+
+    .btn {
+        padding: 0.75rem 1.5rem;
+    }
+
+    .button-group {
+        flex-direction: column;
+        align-items: center;
+    }
+}
