@@ -1,6 +1,30 @@
 <?php $this->layout('layouts::default'); ?>
 <?php $this->start('main_c'); ?>
 
+
+
+<?php
+$jsonFile = __DIR__ . '/../../data/produtos.json';
+
+if (!file_exists($jsonFile)) {
+    die("<p style='color:red'>❌ Arquivo JSON não encontrado em: $jsonFile</p>");
+}
+
+$jsonData = file_get_contents($jsonFile);
+$produto = json_decode($jsonData, true);
+
+if ($produto === null) {
+    die("<p style='color:red'>❌ Erro ao decodificar JSON: " . json_last_error_msg() . "</p>");
+}
+
+if (empty($produto)) {
+    die("<p style='color:orange'>⚠️ Nenhum produto encontrado no JSON.</p>");
+}
+?>
+
+
+
+
 <div class="container py-5">
 
     <!-- =============================

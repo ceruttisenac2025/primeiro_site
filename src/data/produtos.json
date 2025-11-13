@@ -1,0 +1,38 @@
+[
+  {
+    "Nome": "Cadeira Gamer",
+    "Descricao": "Cadeira ergonômica com apoio para cabeça e lombar.",
+    "Preco": 1299.90,
+    "Imagem": "/img/cadeira.webp"
+  },
+  {
+    "Nome": "Mesa de Escritório",
+    "Descricao": "Mesa de madeira com 1,50m de comprimento e design moderno.",
+    "Preco": 849.50,
+    "Imagem": "/img/mesa.jpg"
+  },
+  {
+    "Nome": "Monitor 27''",
+    "Descricao": "Monitor LED Full HD de 27 polegadas.",
+    "Preco": 1199.00,
+    "Imagem": "/img/monitor.jpg"
+  },
+  {
+    "Nome": "Teclado Mecânico Redragon",
+    "Descricao": "Teclado mecânico ABNT2 com iluminação RGB e switches táteis.",
+    "Preco": 349.90,
+    "Imagem": "/img/teclado.jpg"
+  },
+  {
+    "Nome": "Mouse Gamer Logitech",
+    "Descricao": "Mouse com sensor de alta precisão e iluminação RGB.",
+    "Preco": 199.90,
+    "Imagem": "/img/mause.jpg"
+  },
+  {
+    "Nome": "Headset HyperX",
+    "Descricao": "Headset com som estéreo e microfone com cancelamento de ruído.",
+    "Preco": 449.00,
+    "Imagem": "/img/headset.jpg"
+  }
+]

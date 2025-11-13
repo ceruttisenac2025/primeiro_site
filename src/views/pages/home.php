@@ -20,9 +20,9 @@
                 
                 <div class="col">
                     <div class="card h-100 shadow-lg border-0">
-                        <img src="<?= $this->asset("img/personagem.webp") ?>" class="card-img-top img-fluid" alt="Produto 1">
+                        <img src="/<?= $this->asset("img/cadeira.webp") ?>" class="card-img-top img-fluid" alt="Produto 1">
                         <div class="card-body">
-                            <h5 class="card-title text-danger mb-1">Nome do Produto 1</h5>
+                            <h5 class="card-title text-danger mb-1">Cadeira Gamer</h5>
                             <p class="card-text fw-bold text-success fs-5">R$ 99,90</p>
                         </div>
                     </div>
@@ -30,9 +30,9 @@
                 
                 <div class="col">
                     <div class="card h-100 shadow-lg border-0">
-                        <img src="<?= $this->asset("img/personagem.webp") ?>" class="card-img-top img-fluid" alt="Produto 2">
+                        <img src="/<?= $this->asset("img/mesa.jpg") ?>" class="card-img-top img-fluid" alt="Produto 2">
                         <div class="card-body">
-                            <h5 class="card-title text-danger mb-1">Nome do Produto 2</h5>
+                            <h5 class="card-title text-danger mb-1">Mesa de Escritório</h5>
                             <p class="card-text fw-bold text-success fs-5">R$ 149,99</p>
                         </div>
                     </div>
@@ -40,9 +40,9 @@
                 
                 <div class="col">
                     <div class="card h-100 shadow-lg border-0">
-                        <img src="<?= $this->asset("img/personagem.webp") ?>" class="card-img-top img-fluid" alt="Produto 3">
+                        <img src="/<?= $this->asset("img/monitor.jpg") ?>" class="card-img-top img-fluid" alt="Produto 3">
                         <div class="card-body">
-                            <h5 class="card-title text-danger mb-1">Nome do Produto 3</h5>
+                            <h5 class="card-title text-danger mb-1">Monitor</h5>
                             <p class="card-text fw-bold text-success fs-5">R$ 49,50</p>
                         </div>
                     </div>
